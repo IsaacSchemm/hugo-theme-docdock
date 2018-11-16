@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 @font-face {
   font-family: 'Novacento Sans Wide';
   src: url("../fonts/Novecentosanswide-UltraLight-webfont.eot");
@@ -44,14 +44,6 @@ header {
   right: 0;
   top: 0;
   z-index: 100; }
-  header:after {
-    background: url(ribbon.png) 0 0/100% no-repeat;
-    content: '';
-    height: .35rem;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 100%; }
   header a {
     text-decoration: none; }
   header .logo {
@@ -307,9 +299,7 @@ article section.page {
   padding: 2rem 4rem; }
   article section.page h1:first-of-type {
     margin: 3rem 0rem;
-    font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     text-align: center;
-    text-transform: uppercase;
     color: #060606;
     font-weight: 200;
     font-size: 3.25rem;
@@ -346,7 +336,7 @@ article section.page {
       background-color: transparent;
       padding: 0; }
   article section.page img {
-    border: 0;
+    border: 1px solid #333;
     max-width: 100%;
     margin: 3rem auto;
     display: block;
@@ -377,6 +367,7 @@ article section.page {
     overflow: auto;
     padding: .5rem; }
     article section.page pre .copy-to-clipboard {
+      display: none;
       float: right;
       position: relative;
       right: 0px; }
